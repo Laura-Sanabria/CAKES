@@ -1,0 +1,41 @@
+/* Contenedor de la galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+/* Estilo de la Card de Pasteles */
+.cake-card {
+  background-color: #8a745c; /* Un tono crema para pastelería */
+  border: 2px solid #dfa9ff;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  width: 200px;
+}
+
+.cake-card:hover {
+  transform: scale(1.05); /* Efecto de agrandar al pasar el mouse */
+}
+
+.cake-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cake-card h3 {
+  color: #5a3e7a;
+  margin: 10px 0;
+}
+
+.cake-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
